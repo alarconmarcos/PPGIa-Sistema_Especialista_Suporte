@@ -1,0 +1,23 @@
+null,null,computador_liga,O Computador liga?
+computador_liga,sim,a_bios_esta_iniciando,A BIOS está iniciando?
+computador_liga,nao,fonte_inicia,A fonte inicia?
+fonte_inicia,sim,voltagens_corretas,A voltagem está correta?
+fonte_inicia,nao,alimentacao_conectada,A alimentacao está conectada?
+alimentacao_conectada,sim,fonte_queimada,Tá ruim mas tá bom, a fonte esta queimada, porém não e algo tão caro.
+alimentacao_conectada,nao,conectar_alimentacao,É Sério?, Ainda não inventaram energia sem fio, Liga o pc na tomada que irá funcionar cabeção.
+voltagens_corretas,sim,checar_circuito_de_alimentacao,Puts, deu problema no circuito de alimentação da placa mae. Leve para a assistência.
+voltagens_corretas,nao,fonte_com_problema,Alguma coisa não está certa com sua fonte. Leve para a assistência
+a_bios_esta_iniciando,sim,boot_os,O Sistema Operacional inicia?
+a_bios_esta_iniciando,nao,speaker_emite_alertas,O speaker emite alertas?
+speaker_emite_alertas,sim,checar_processador_e_memoria_ram,Deu ruim, problema no processador ou memória ram. Troque a pasta térmica e passe borracha na memória ram para ver se resolve.
+speaker_emite_alertas,nao,problema_na_placa_mae,Puxa vida, sua placa mãe está com problema. Procure uma assistência técnica.
+boot_os,nao,unidade_de_armazenamento_detectada, A unidade de armazenamento é detectada?
+boot_os,sim,os_inicia_completamente, O sistema operacional inicia completamente?
+unidade_de_armazenamento_detectada,sim,ordem_de_boot_correta,A ordem de boot está correta?
+unidade_de_armazenamento_detectada,nao,hd_ou_ssd_desconectado_ou_com_defeito,O HD/SSD não está conectado. Se estiver conectado, o HD/SSD está com defeito. Dessa forma, é necessário fazer a troca.
+ordem_de_boot_correta,nao,ajustar_boot, Bem lógico isso, não preciso nem responder né?.
+ordem_de_boot_correta,sim,unidade_de_armazenamento_integra, A unidade de armazenamento está íntegra?
+unidade_de_armazenamento_integra,sim,imagem_so_corrompida,O Sistema Operacional está corrompido. Faça o reparado dos arquivos do sistema. Se der certo, ótimo. Caso contrário, faça a reinstalação do Sistema Operacional.
+unidade_de_armazenamento_integra,nao,substituir_hd_ou_ssd,Troque o HD/SDD.
+os_inicia_completamente,sim,funcionamento_normal,Que ótimo, seu computador está funcionando perfeitamente!
+os_inicia_completamente,nao,imagem_so_corrompida, O Sistema Operacional está corrompido. Faça o reparado dos arquivos do sistema. Se der certo, ótimo. Caso contrário, faça a reinstalação do Sistema Operacional.
