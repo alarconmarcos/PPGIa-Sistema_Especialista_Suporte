@@ -7,15 +7,28 @@ class Diagnostico():
 		# armazena as linhas em uma lista, separando os dados por vírgula
 		# cada linha do arquivo representa uma pergunta, resposta e próxima pergunta
 		
+		# arquivo = open('db.txt','r', encoding='utf-8')
+		# for linha in arquivo:
+		# 	linha = linha.strip()  # Remove espaços e quebras de linha
+		# 	if linha:
+		# 		# Divide a linha em 4 partes e carrega somente os três primeiros
+		# 		dados = linha.split(',', 3)[:3]
+		# 		self.db.append(dados)
+
+		# arquivo.close()
+
+
+
 		arquivo = open('db.txt','r', encoding='utf-8')
 		for linha in arquivo:
 			linha = linha.strip()  # Remove espaços e quebras de linha
 			if linha:
 				# Divide a linha em 4 partes e carrega somente os três primeiros
-				dados = linha.split(',', 3)[:3]
+				dados = linha.split(';')
 				self.db.append(dados)
 
 		arquivo.close()
+
 
 
 	# faz a busca no banco de dados, com base na pergunta e resposta
@@ -41,4 +54,4 @@ class Diagnostico():
 		if resp == 'sim' or resp == 'Sim':
 			return self.proxPergunta('sim', caract)
 		elif resp == 'nao' or resp == 'Nao' or resp == 'não' or resp == 'Não':
-			return self.proxPergunta('nao', caract)
+			return self.proxPergunta('não', caract)

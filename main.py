@@ -14,14 +14,14 @@ se = Diagnostico()
 pergunta = Pergunta()
 
 #A primeira pergunta é a primeira linha do arquivo
-proxPergunta = pergunta.lista[0][0]
+proxPergunta = se.db[0][2]
 
 while proxPergunta != 'Fim':
 	string = pergunta.texto(proxPergunta)
-	proxPergunta = se.pergunta(string[0],string[1])
+	proxPergunta = se.pergunta(string[2],string[3])
 
 
-print(string[1])
+print(string[3])
 
 
 # DICAS DE TESTE:
