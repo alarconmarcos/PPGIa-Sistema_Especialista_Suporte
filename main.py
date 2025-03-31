@@ -13,7 +13,8 @@ from classPerguntas import *
 se = Diagnostico()
 pergunta = Pergunta()
 
-proxPergunta = 'computador_liga'
+#A primeira pergunta é a primeira linha do arquivo
+proxPergunta = pergunta.lista[0][0]
 
 while proxPergunta != 'Fim':
 	string = pergunta.texto(proxPergunta)
