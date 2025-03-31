@@ -16,7 +16,7 @@ pergunta = Pergunta()
 #A primeira pergunta é a primeira linha do arquivo
 proxPergunta = se.db[0][2]
 
-while proxPergunta != 'Fim':
+while proxPergunta != 'FIM':
 	string = pergunta.texto(proxPergunta)
 	proxPergunta = se.pergunta(string[2],string[3])
 

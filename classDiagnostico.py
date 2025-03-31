@@ -24,9 +24,9 @@ class Diagnostico():
 	def buscaDb(self, resposta, caract):	
 		for i in range(len(self.db)):
 			if caract == self.db[i][0]:
-				if self.db[i][1] == resposta:
+				if self.db[i][1].upper() == resposta:
 					return self.db[i][2]
-		return 'Fim'
+		return 'FIM'
 
 	# dependendo a resposta já busca a próxima pergunta
 	# essa função é chamada quando o usuário responde a pergunta
@@ -36,10 +36,10 @@ class Diagnostico():
 
 	# Obtem a resposta do usuário e busca a próxima pergunta
 	def pergunta(self,caract, pergunta):
-		if self.proxPergunta('sim', caract) == 'Fim':
-			return 'Fim'	
-		resp = input(pergunta)
-		if resp == 'sim' or resp == 'Sim':
-			return self.proxPergunta('sim', caract)
-		elif resp == 'nao' or resp == 'Nao' or resp == 'não' or resp == 'Não':
-			return self.proxPergunta('não', caract)
+		if self.proxPergunta('SIM', caract) == 'FIM':
+			return 'FIM'	
+		resp = input(pergunta).upper()
+		if resp == 'SIM':
+			return self.proxPergunta('SIM', caract)
+		elif resp == 'NAO' or resp == 'NÃO':
+			return self.proxPergunta('NÃO', caract)
