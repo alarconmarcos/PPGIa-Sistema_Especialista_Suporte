@@ -4,26 +4,14 @@ class Diagnostico():
 		self.db = []
 
 		# abre o arquivo db.txt e lê as linhas
-		# armazena as linhas em uma lista, separando os dados por vírgula
-		# cada linha do arquivo representa uma pergunta, resposta e próxima pergunta
+		# armazena as linhas em uma lista, separando os dados por ponto e vírgula
+		# cada linha do arquivo representa uma pergunta, resposta, diagnóstico ou próxima pergunta
 		
-		# arquivo = open('db.txt','r', encoding='utf-8')
-		# for linha in arquivo:
-		# 	linha = linha.strip()  # Remove espaços e quebras de linha
-		# 	if linha:
-		# 		# Divide a linha em 4 partes e carrega somente os três primeiros
-		# 		dados = linha.split(',', 3)[:3]
-		# 		self.db.append(dados)
-
-		# arquivo.close()
-
-
-
 		arquivo = open('db.txt','r', encoding='utf-8')
 		for linha in arquivo:
 			linha = linha.strip()  # Remove espaços e quebras de linha
 			if linha:
-				# Divide a linha em 4 partes e carrega somente os três primeiros
+				# Separa os dados por ponto e vírgula
 				dados = linha.split(';')
 				self.db.append(dados)
 
