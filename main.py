@@ -11,13 +11,13 @@ from classPerguntas import *
 
 #Inferência
 se = Diagnostico()
-pergunta = Pergunta()
+busca = Pergunta()
 
 #A primeira pergunta é a primeira linha do arquivo
-proxPergunta = se.db[0][2]
+proxPergunta = busca.db[0][2]
 
 while proxPergunta != 'FIM':
-	string = pergunta.texto(proxPergunta)
+	string = busca.texto(proxPergunta)
 	proxPergunta = se.pergunta(string[2],string[3])
 
 
