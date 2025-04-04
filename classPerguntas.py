@@ -21,8 +21,6 @@ class Pergunta:
 
 		arquivo.close()
 
-
-
 	# busca a pergunta na lista de perguntas e respostas
 	def texto(self, pergunta):
 		for i in range(len(self.db)): 

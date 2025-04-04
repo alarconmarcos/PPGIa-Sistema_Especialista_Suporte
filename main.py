@@ -5,7 +5,6 @@
 # Professor: Edson Emilio Scalabrin
 # Alunos: Marcos Alarcon, Daniel Volanick e Camila Gonçalves Marques
 
-
 from classDiagnostico import *
 from classPerguntas import *
 
@@ -19,7 +18,6 @@ proxPergunta = busca.db[0][2]
 while proxPergunta != 'FIM':
 	string = busca.texto(proxPergunta)
 	proxPergunta = se.pergunta(string[2],string[3])
-
 
 print(string[3])
 

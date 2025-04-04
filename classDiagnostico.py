@@ -4,7 +4,6 @@ dados = Pergunta()
 
 class Diagnostico():
 
-
 	# faz a busca no banco de dados, com base na pergunta e resposta
 	# retorna a próxima pergunta ou 'Fim' se não houver mais perguntas
 	def buscaDb(self, resposta, caract):	
