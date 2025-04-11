@@ -15,11 +15,28 @@ busca = Pergunta()
 #A primeira pergunta é a primeira linha do arquivo
 proxPergunta = busca.db[0][2]
 
+print("=" * 100)
+print("\nSistema especialista de diagnóstico de computadores\n")
+print("=" * 100)
+print("\nResponda as perguntas com Sim ou Não\n")
+
+
 while proxPergunta != 'FIM':
 	string = busca.texto(proxPergunta)
 	proxPergunta = se.pergunta(string[2],string[3])
 
-print(string[3])
+print("\n" + "=" * 100 + "\n")
+print("Diagnóstico: " + string[3])
+print("\n" + "=" * 100 + "\n")
+
+
+
+
+
+
+
+
+
 
 
 # LISTA DE REGRAS

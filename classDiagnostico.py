@@ -28,3 +28,6 @@ class Diagnostico():
 			return self.proxPergunta('SIM', caract)
 		elif resp == 'NAO' or resp == 'NÃO':
 			return self.proxPergunta('NÃO', caract)
+		else:
+			print("\nResposta inválida. Por favor, responda 'Sim' ou 'Não'.\n")
+			return self.pergunta(caract, pergunta)
