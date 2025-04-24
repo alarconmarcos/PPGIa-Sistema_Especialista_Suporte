@@ -1,6 +1,5 @@
-# Pequeno sistema especialista em python para diagnosticar problemas no computador
+# PUCPR - Ministema especialista de diagnostico de computadores
 
-# PUCPR
 # Disciplina: Inteligência Artificial
 # Professor: Edson Emilio Scalabrin
 # Alunos: Marcos Alarcon, Daniel Volanick e Camila Gonçalves Marques
@@ -16,7 +15,7 @@ busca = Pergunta()
 proxPergunta = busca.db[0][2]
 
 print("=" * 100)
-print("\nSistema especialista de diagnóstico de computadores\n")
+print("\nMinisistema especialista de diagnóstico de computadores\n")
 print("=" * 100)
 print("\nResponda as perguntas com Sim ou Não\n")
 
